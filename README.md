@@ -78,6 +78,8 @@ The power BI dashboard consist of two pages
 - **length of stay by treatment cost and admission type**: Elective admission lead to the highest treatment cost of $25,602 with the average stay of 15.5 days
 - Emergency lead with the highest stay if 15.6 days and urgent admission with 15.4 days
 
+### check the interactive dashboard [click Here](https://app.powerbi.com/view?r=eyJrIjoiYjVkYmNjOTAtYTMzYS00NWEwLTk0YmEtODBjMjA3ZjcxMmI1IiwidCI6IjUzYjJmMWM0LWNiNjItNDc2MC04OTgyLWU4NGJmMDMwNmM4MiJ9)
+
 ## Recommendations 
 - Introduce Patients monitoring apps for remote tracking of vital sign of blood sugar and blood pressure
 - Address common issues like diabetes through awareness and education
