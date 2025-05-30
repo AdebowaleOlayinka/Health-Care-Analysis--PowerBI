@@ -6,6 +6,8 @@
 - [Dataset Overview](#dataset-overview)
 - [Problem Statement](#problem-statement)
 - [Technique Applied](#technique-applied)
+- [Data Cleaning](#data-cleaning)
+- [Dax Measures](#dax-measures)
 - [Dashboard](#dashboard)
 - [Insight](#insight)
 - [Recommendations](#recommendations)
@@ -33,21 +35,34 @@ The Health Care project contains a dataset of 55,500 record of patients from 10 
 - Dax calculations and kpi
 - Visualization
 
-## Data Cleaning and Transformation 
+## Data Cleaning 
 The data set was cleaned in powerBI and dax calculations and kpi was generated
 
 - Created a new Column for Age category and length of stay
 
-## Dax Calculations
+## Dax Measures 
 Dax was performed to generate the kpi for the following
 
 - Total patient
+```
+Total patient= Distinct count('Health care data'[Patient ID])
+```
 - Billing Amount
-- Average Billing amount
-- Average length of stay 
-
-![Dax Calculation](https://github.com/user-attachments/assets/4f9d5746-09e0-42ac-ad22-c5d2939e93d2)
-
+```
+Billing Amount= Sum('Health care data'[Billing Amount])
+```
+- Average Billing Amount
+```
+Average Billing Amount= Average('Health care data'[Billing Amount])
+```
+- Length of stay
+```
+Length of stay= DateDiff('Health care data'[Date of admission],'Health care data'[Discharge date],Day)
+```
+- Average Stay
+```
+Average stay= Average('Health care data'[Length of stay])
+```
 
 ## Dashboard 
 The power BI dashboard consist of two pages 
